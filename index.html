@@ -5,84 +5,269 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>CrocoDildo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/demo.js"></script>
+    <title>PC building</title>
 </head>
 <body>
-        <div class="conteiner">
-            <header>
-                <div class="main-banner">
-                    <img class="logo"   src="img/logo.png" alt="logo">
-                    <h1 class="main-name">CrocoDildo</h1>
-                    <nav class="nav__links">
-                        <ul>
-                            <li><a href="#">Цены</a></li>
-                            <li><a href="#">Где мы?</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <button class="cta"><a href="/">Бронировать</a></button>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__menu container flex">
+                <div class="header__logo flex">
+                    <img class="logo-img" src="img/logo.png" alt="">
                 </div>
-            </header>
-        
-            <main>
-                <div class="price-section">
-    
-                    <div class="price__card">
-                        <img src="img/hookah-1.png" alt="">
-                        <p class="name-card">Легкий</p>
-                        <div class="card__srars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="price-title">Здесь должно быть какое-то описание, но пока никто его не придумал, будет так как будет.</p>
-                        <button class="price-btn"><a href="#">209 грн</a></button>
-                    </div>
-        
-                    <div class="price__card">
-                        <img src="img/hookah-2.png" alt="">
-                        <p class="name-card">Средний</p>
-                        <div class="card__srars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="price-title">Здесь должно быть какое-то описание, но пока никто его не придумал, будет так как будет.Здесь должно быть какое-то описание, но пока никто его не придумал, будет так как будет.</p>
-                        <button class="price-btn"><a href="#">229 грн</a></button>
-                    </div>
-        
-                    <div class="price__card">
-                        <img src="img/hookah-3.png" alt="">
-                        <p class="name-card">Тяжелый</p>
-                        <div class="card__srars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                        <p class="price-title">Здесь должно быть какое-то описание, но пока никто его не придумал, будет так как будет.</p>
-                        <button class="price-btn"><a href="#">269 грн</a></button>
-                    </div>
-        
-                    <div class="price__card">
-                        <img src="img/hookah-4.png" alt="">
-                        <p class="name-card">Специальный</p>
-                        <div class="card__srars">
-                            <span class="fa fa-star checked-red"></span>
-                            <span class="fa fa-star checked-red"></span>
-                            <span class="fa fa-star checked-red"></span>
-                            <span class="fa fa-star checked-red"></span>
-                        </div>
-                        <p class="price-title">Здесь должно быть какое-то описание, но пока никто его не придумал, будет так как будет.Здесь должно быть какое-то описание, но пока никто его не придумал, будет так как будет.</p>
-                        <button class="price-btn"><a href="#">299 грн</a></button>
-        
+                <nav class="nav flex">
+                    <ul class="nav-ul flex">
+                        <li class="nav-li"><a class="nav-a" href="" class="header-link">Главная</a></li>
+                        <li class="nav-li"><a href="" class="header-link">Курсы</a></li>
+                        <li class="nav-li"><a href="" class="header-link">Расписание</a></li>
+                        <li class="nav-li"><a href="" class="header-link">Преподаватели</a></li>
+                        <li class="nav-li"><a href="" class="header-link">Рассылка</a></li>
+                        <li class="nav-li"><a href="" class="header-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__btn flex">
+                    <button class="btn btn--purple">Зайти в кабинет</button>
                 </div>
-            </main>
-        
-            <footer>
-                
-            </footer>
+            </div>
+            <div class="header__hero container flex">
+                <h1 class="header__hero-h1">Первый курс <br> по компьютерной сборке</h1>
+                <div class="header-hero__countdown flex">
+                    <p id="demo"></p>
+                </div>
+            </div>
         </div>
+    </header>
+    <section class="order">
+        <div class="order__info container flex">
+            <div class="order__btn">
+                <button class="btn btn--oringe">Заказать курс</button>
+            </div>
+            <div class="order__stat">
+                <div class="stat flex">
+                    <div class="stat-all flex">
+                        <div class="stat-text">Учеников всего:</div>
+                        <div class="loh">200</div>
+                    </div>
+                    <div class="stat-finished flex">
+                        <div class="stat-text">Успешно закончили курс:</div>
+                        <div class="loh">190</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__progress">
+                <div class="progress-info flex">
+                    <div class="info-pupils">Заработано учениками:</div>
+                    <div class="info-earned">400 000 UAH</div>
+                </div>
+                <div class="progress flex"></div>
+                <div class="progress-money flex">
+                    <div class="money-from">0 UAH</div>
+                    <div class="money-to">1 000 000 UAH</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__inner container flex">
+            <div class="about__box flex">
+                <div class="about__border">
+                    <img class="pc-img" src="img/pc.png" alt="">
+                </div>
+            </div>
+            <div class="about__text flex">
+                <div class="about__text-title">Чем мы занимаемся?</div>
+                <div class="about__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </div>
+            </div>
+        </div>
+    </section>
+    <section class="stat-info">
+        <div class="stat-info__inner container">
+            <div class="stat-info__start flex">
+                <div class="stat-info__start-content flex">
+                    <img class="load-img" src="img/loading.png" alt="">
+                    <div class="stat-info__title flex">Быстрый старт</div>
+                </div>
+                <div class="stat-info__subtitle flex">Больше 90% учеников прошли полный курс и смогли <br> собрать свой первый компьютер
+                </div>
+            </div>
+            <div class="stat-info__infograph flex">
+                <div class="stat-info__graph flex">
+                    <div class="graph-percent">100%</div>
+                    <div class="graph-color"></div>
+                    <div class="graph-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="stat-info__graph flex">
+                    <div class="graph-percent">75%</div>
+                    <div class="graph-color color--2"></div>
+                    <div class="graph-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="stat-info__graph flex">
+                    <div class="graph-percent">50%</div>
+                    <div class="graph-color color--3"></div>
+                    <div class="graph-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="stat-info__graph flex">
+                    <div class="graph-percent">Итог</div>
+                    <div class="graph-color color--4"></div>
+                    <div class="graph-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="getJob">
+        <div class="getJob__inner container">
+            <h2 class="getJob-h2">Получите профессию прямо сейчас</h2>
+            <div class="getJob__cards flex">
+                <div class="getJob__card flex">
+                    <img class="icon-card" src="img/icon1.png" alt="">
+                    <div class="getJob__title">Только практические
+                        навыки в работе</div>
+                    <div class="getJob__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="getJob__card flex">
+                    <img class="icon-card" src="img/icon2.png" alt="">
+                    <div class="getJob__title">Работа на самом
+                        современном оборудовании</div>
+                    <div class="getJob__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="getJob__card flex">
+                    <img class="icon-card" src="img/icon3.png" alt="">
+                    <div class="getJob__title">Сертификация
+                        по окончании обучения</div>
+                    <div class="getJob__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="partners__inner container flex">
+            <div class="partners__text flex">
+                <img class="load-img" src="img/loading.png" alt="">
+                <div class="partners__title">Партнеры - топовые бренды</div>
+            </div>
+            <div class="partners__table">
+                <div class="partners__logos flex">
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                </div>
+                <hr class="hr">
+                <div class="partners__logos flex">
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                    <div class="partners__logo"><img src="img/msi.png" alt="" class="logo-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="education">
+        <div class="education__inner container">
+            <div class="education__text">
+                <img class="load-img logo--2" src="img/loading.png" alt="">
+                <h2 class="education-h2">Программа обучения</h2>
+                <div class="education__subtitle">Больше 90% учеников прошли полный курс и смогли <br> собрать свой первый компьютер</div>
+            </div>
+            <div class="education__weeks flex">
+                <div class="container flex">
+                    <div class="timeline">
+                      <ul>
+                        <li>
+                          <div class="timeline-content">
+                            <h1>Неделя 1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-content">
+                            <h1>Неделя 2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-content">
+                            <h1>Неделя 3</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-content">
+                            <h1>Неделя 4</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                              <h1>Неделя 5</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="timeline-content">
+                              <h1>Неделя 6</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+    </section>
+    <section class="instructors">
+        <div class="instructors__inner container">
+            <div class="instructors-text flex">
+                <img class="load-img" src="img/loading.png" alt="">
+                <div class="instructors__title flex">Ваши преподаватели</div>
+            </div>
+            <div class="instructor-cards flex">
+                <div class="instructor">
+                    <img class="instructor-ava" src="img/instructor-1.png" alt="">
+                    <div class="instructor-name">Дмитрий Иванов</div>
+                    <div class="instructor-position">Специалист по видеокартам</div>
+                    <button class="btn btn--instructor">Биография</button>
+                </div>
+                <div class="instructor">
+                    <img class="instructor-ava" src="img/instructor-2.png" alt="">
+                    <div class="instructor-name">Дмитрий Иванов</div>
+                    <div class="instructor-position">Специалист по видеокартам</div>
+                    <button class="btn btn--instructor">Биография</button>
+                </div>
+                <div class="instructor">
+                    <img class="instructor-ava" src="img/instructor-3.png" alt="">
+                    <div class="instructor-name">Дмитрий Иванов</div>
+                    <div class="instructor-position">Специалист по видеокартам</div>
+                    <button class="btn btn--instructor">Биография</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="foote__inner container">
+            <div class="footer__subtitle">Статьи каждую неделю</div>
+            <div class="footer__title">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</div>
+            <div class="footer__form">
+                <input class="footer-input" type="text" placeholder="E-mail">
+            <button class="btn btn--oringe btn--form">Подписаться</button>
+            </div>
+            <div class="footer__icons flex">
+                <div class="icon flex">
+                    <img class="icon-logo" src="img/logo-vk.png" alt="">
+                </div>
+                <div class="icon flex">
+                    <img class="icon-logo" src="img/logo-fb.png" alt="">
+                </div>
+                <div class="icon flex">
+                    <img class="icon-logo" src="img/logo-yt.png" alt="">
+                </div>
+                <div class="icon flex">
+                    <img class="icon-logo" src="img/logo-inst.png" alt="">
+                </div>
+            </div>
+            <div class="footer-p">Templates #18. More on Figma.info</div>
+        </div>
+    </footer>
 </body>
 </html>
+
